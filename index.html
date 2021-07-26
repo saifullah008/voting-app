@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Election DAPP</title>
+    <script type="text/javascript" src="https://www.gstatic.com/nonpms/loader.js"></script>
+
+    <!-- css stylesheet    -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- font awesome -->
+    <script src="https://use.fontawesome.com/releases/v5.15.2/js/all.js" data-auto-a11y="true"></script>
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@1,700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <h1 id="ElectionName">College President Election</h1>
+    <h2 class="live">*LIVE</h2>
+    <div id="chart" style="width: 800px; height: 400px;"></div>
+
+    <div class="voting-section">
+        <div class="booth">
+            <i class="fas fa-person-booth"></i> Booth
+        </div>
+        <div class="row">
+            <label for="pvtkey">Node address:</label>
+            <input type="text" id="pvtkey" name="pvtkey" placeholder="ENTER YOUR ADDRESS">
+        </div>
+
+        <div class="row">
+            <label class="row" for="votedto">Select Candidate:</label>
+            <select class="row" id="votedto">
+                <option value="0">Candidate-1(Party)</option>
+                <option value="1">Candidate-2(Party)</option>
+                <option value="2">Candidate-3(Party)</option>
+            </select>
+        </div>
+
+        <div class="row" id="btn">
+            <button id="vote"><span id="vote-text">Vote</span><i class="fas fa-vote-yea fa-lg"></i></button>
+        </div>
+
+
+
+
+
+    </div>
+
+    <!-- jQuery   -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    
+    <!--web3-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/web3/1.3.4/web3.min.js"></script>
+
+    <!-- javascipt -->
+    <script src="app.js"></script>
+</body>
+
+</html>
